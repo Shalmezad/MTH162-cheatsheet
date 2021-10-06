@@ -6,6 +6,7 @@
 \pagestyle{empty}
 \setcounter{secnumdepth}{0}
 
+%\setlength{\parskip}{0.1em}
 \geometry{top=.5in,left=.5in,right=.5in,bottom=.5in}
 
 \begin{document}
@@ -15,9 +16,9 @@
 	\begin{multicols}{4}
 \section{Useful Stuff}
 \subsection{Trig Functions}
-\paragraph{}
+
 $sin^2(x) = \frac{1-cos(2x)}{2}$
-\paragraph{}
+
 $cos^2(x) = \frac{1+cos(2x)}{2}$
 
 
@@ -76,21 +77,32 @@ $csch(x)$ & $-csch(x)coth(x)$ \\
 
 \paragraph{Int by parts} 
 $\int u dv = uv - \int v du$
-*Pick u using LIATE (log, inv trig, alg, trig, exp)
+
+Pick u using LIATE (log, inv trig, alg, trig, exp)
+
+\hrulefill
 
 \paragraph{$ \int cos^j(x)sin^k(x)dx $}
-If k odd, keep 1 $sin(x)$, convert rest using $sin^2x = 1-cos^2x$. u-sub with $u=cos(x)$.
-If j odd, keep 1 $cos(x)$, convert rest using $cos^2x = 1-sin^2x$. u-sub with $u=sin(x)$.
-If k/j even, use $sin^2x=\frac{1-cos(2x)}{2}$.
+\subparagraph{If k odd}
+keep 1 $sin(x)$, convert rest using $sin^2x = 1-cos^2x$. u-sub with $u=cos(x)$.
+\subparagraph{If j odd}
+keep 1 $cos(x)$, convert rest using $cos^2x = 1-sin^2x$. u-sub with $u=sin(x)$.
+\subparagraph{If both even}
+use $sin^2x=\frac{1-cos(2x)}{2}$.
 
 \paragraph{$ \int tan^k(x)sec^j(x)dx $}
-If j even and $\ge 2$, keep $sec^2(x)$, convert rest using $sec^2x=tan^2x+1$. u-sub with $u=tanx$.
-If k odd, $j \ge 1$, keep $sec(x)tan(x)$, convert rest using $tan^2x=sec^2x$. u-sub with $u=secx$.
-If k odd, $k \ge 3$ and $j=0$, turn one $tan^2x$ into $sec^2x-1$. Repeat process.
+\subparagraph{If j even and $\ge 2$}
+keep $sec^2(x)$, convert rest using $sec^2x=tan^2x+1$. u-sub with $u=tanx$.
+\subparagraph{If k odd, $j \ge 1$}
+keep $sec(x)tan(x)$, convert rest using $tan^2x=sec^2x$. u-sub with $u=secx$.
+\subparagraph{If k odd, $k \ge 3$ and $j=0$}
+turn one $tan^2x$ into $sec^2x-1$. Repeat process.
 If k even, j odd, use $tan^2x=sec^2x-1$ to turn $tan^kx$ to $secx$.
 
 \paragraph{Reductions}
+\subparagraph{}
 $ \int sec^nx dx = \frac{1}{n-1}sec^{n-2}xtanx+\frac{n-2}{n-1}\int sec^{n-2}x dx$
+\subparagraph{}
 $ \int tan^nx dx = \frac{1}{n-1}tan^{n-1}x-\int tan^{n-2}x dx$
 
 \paragraph{Sub $a^2-x^2$}
