@@ -25,39 +25,55 @@ $cos^2(x) = \frac{1+cos(2x)}{2}$
 \section{Area \& Volume}
 
 \paragraph{Volume by slicing}
+
 A(x) = area of cross section at x,
+
 $V(S) = \int_{a}^{b}A(x)dx$
 
 \paragraph{Volume by disk}
+
 If f(x) rotated around x-axis,
+
 $V(S) = \int_{a}^{b}\pi [f(x)]^2dx$
 
 \paragraph{Volume by cylindrical shells}
+
 If f(x) rotated around y-axis,
+
 $V(S) = \int_{a}^{b}(2\pi x f(x))dx$
 
 \section{Applications}
 
 \paragraph{Arc Length}
+
 $\int_{a}^{b} \sqrt{1+[f'(x)]^2}dx$
 
 Note use of derivative!
 
 \paragraph{Surface Area of Revolution}
+
 Revolve f(x) around x axis,
+
 $SA(x) = \int_{a}^{b}(2 \pi f(x) \sqrt{1+[f'(x)]^2})dx$
 
 \paragraph{Mass-density for 1-d object}
+
 If p(x) linear density for given x,
+
 $m = \int_{a}^{b}p(x)dx$
 
 \paragraph{Mass-density for circular object}
+
 If p(x) radial density for given x, and radius = r,
+
 $m = \int_{0}^{r}2 \pi x p(x)dx$
 
 \paragraph{Work done}
+
 If F(X) = force at point x,
+
 $W = \int_{a}^{b} F(x) dx$
+
 *Recall constant force yields $F*d$
 
 \subsection{Hyperbolic Functions}
@@ -114,6 +130,11 @@ $a^2-x^2$ & Use $x=asin\theta$ \\
 $a^2+x^2$ & Use $x=atan\theta$ \\
 $x^2-a^2$ & Use $x=asec\theta$
 \end{tabular}
+
+\paragraph{Arclength $ax^2$}
+$\frac{x\sqrt{1+4a^2x^2}}{2} + \frac{ln(|\sqrt{1+4a^2x^2}+2ax|)}{4a}$
+
+Note: if evaluating over interval [a,b], if a=0, just plug in b
 		
 	\end{multicols}
 \end{document}
