@@ -169,6 +169,8 @@ Let M = max value of $|f^4(x)|$ over [a,b]. Error is:
 $E \leq \frac{M(b-a)^5}{180n^4}$
 
 
+\pagebreak
+
 \section{Sequences/Series}
 
 \paragraph{Geometric Convergence}
@@ -195,6 +197,14 @@ For $\sum_{n=1}^{\infty} \frac{1}{n^p}$, converges if $p > 1$, diverges if $p \l
 Same rules as integral test for $f(n)$. 
 $\int_{N+1}^{\infty} f(x)dx < R_N < \int_{N}^{\infty} f(x)dx$
 
+\paragraph{Comparison test}
+If you have sum of $a_n$, find a similar sum of $b_n$ (only works if $a_n$ and $b_n \geq 0$ ). If $a_n \leq b_n$ and $b_n$'s sum converges, $a_n$'s sum converges. If $a_n \geq b_n$ and $b_n$'s sum diverges, $a_n$'s sum diverges.
+
+\paragraph{Root test}
+For $\sum_{n=1}^{\infty}a_n$ such that $\lim_{n\rightarrow\infty}\sqrt[n]{|a_n|}=p$ for some p. If $0 \leq p < 1$, the sum converges absolutely. If $p > 1$ or $p = \infty$, it diverges. If $p = 1$, test provides no information.
+
+\paragraph{Ratio Test}
+For $\sum_{n=1}^{\infty}a_n$  with positive terms, and $\lim_{n\rightarrow\infty}|\frac{a_{n+1}}{a_n}| = L$, if $L < 1$, sum converges. If $L > 1$, sum diverges
 		
 	\end{multicols}
 \end{document}
